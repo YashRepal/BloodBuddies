@@ -1,0 +1,218 @@
+  /* Import the Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap');
+
+  /* Global styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+  }
+
+  /* Main container styles */
+  .donate-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+  }
+
+  /* Navigation bar styles */
+  .register-nav {
+    background: url('../Images/ug.png');
+  }
+
+  .register-header {
+    background-color: white;
+    color: white;
+    height: 18%;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    font-weight: 100;
+  }
+
+  .register-header-logo {
+    font-size: 10px;
+    float: left;
+    padding-left: 30px;
+    padding-top: 0px;
+  }
+
+  .register-header-logo > img {
+    width: 70%;
+  }
+
+  .register-header-list li a {
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 20px;
+    transition: all ease 0.5s;
+  }
+
+  .register-header-list li {
+    float: right;
+    padding-left: 30px;
+    padding-top: 30px;
+    list-style: none;
+    padding-right: 40px;
+    font-size: 24px;
+  }
+
+  .register-header-list li a:hover {
+    background-color: rgba(220, 20, 60);
+    color: white;
+  }
+
+  /* Centered content styles */
+  .make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner {
+    height: fit-content;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Photo styles */
+  .photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo img {
+    height: 100%;
+  }
+
+  /* User form styles */
+  .user-form {
+    background: #F08080;
+    padding: 40px;
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .user-form h1 {
+    color: #fff;
+    padding: 30px 0;
+    margin: 25px 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  /* Input styles */
+  .user-form i {
+    position: absolute;
+    margin: 25px 10px;
+    color: #F08080;
+  }
+
+  input,
+  select {
+    width: 80%;
+    height: 3em;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 0 30px;
+  }
+
+  /* Select styles */
+  .user-form select + i {
+    position: absolute;
+    margin: 25px 10px;
+    color: #F08080;
+  }
+
+  /* Action button styles */
+  .action-btn {
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+  }
+
+  .btn {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+    cursor: pointer;
+    font-weight: 700px;
+    font-size: medium;
+    margin: 0 10px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+  }
+
+  .primary {
+    font-size: medium;
+    background: none;
+    border: 2px solid white;
+    color: white;
+  }
+
+  .primary:hover {
+    background: linear-gradient(45deg, yellow 24%, orange 100%);
+    border: none;
+    color: black;
+  }
+
+  .btn:hover {
+    background: linear-gradient(45deg, yellow 24%, orange 100%);
+    border: none;
+    color: black;
+  }
+
+  /* Responsive styles for smaller screens */
+  @media (max-width: 700px) {
+    .photo {
+      display: none;
+    }
+
+    .user-form {
+      width: 100%;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+
+    .action-btn {
+      margin: 5px;
+      display: block;
+      width: 100%;
+    }
+
+    
+
+    .btn {
+      width: 100%;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    /* Adjust styles for select elements on smaller screens */
+    select {
+      width: 100%;
+    }
+
+    /* Additional styles for smaller screens */
+    .user-form select + i {
+      margin: 15px 10px;
+    }
+  }
